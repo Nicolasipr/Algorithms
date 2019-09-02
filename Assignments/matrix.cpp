@@ -54,7 +54,12 @@ int main(){
         cout << endl;
     }
 
-   
+    for(auto i =  0; i < N; i++){
+        for(auto j =  0; j  < M; j++){
+            cout <<"\n Minimum is: " <<min( { pacing(i, j + 1), pacing(i, j - 1), pacing(i + 1, j), pacing(i - 1, j) } ) << endl;
+        }
+    }
+
 
 
     return 0;
